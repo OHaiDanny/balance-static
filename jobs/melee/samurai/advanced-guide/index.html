@@ -1,78 +1,138 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
+<!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="ie=edge">
-<meta itemprop=name content>
-<meta itemprop=description content="The Shadowbringers Samurai Compendium An Exploration of 5.0 Samurai Mechanics By Jahaudant @ The Balance & DPS Tools Discords Last Updated 17th April 2020
- Introduction Final Fantasy XIV Version 5.0: Shadowbringers has arrived, and with it a plethora of job and balance changes for Samurai &ndash; many of which have significant implications on how we should be playing the job optimally.
-Before we get started, it is important to note that this document is not intended to act as a traditional guide.">
-<meta itemprop=dateModified content="2021-10-28T03:28:29+00:00">
-<meta itemprop=wordCount content="3181">
-<meta itemprop=keywords content><meta property="og:title" content>
-<meta property="og:description" content="The Shadowbringers Samurai Compendium An Exploration of 5.0 Samurai Mechanics By Jahaudant @ The Balance & DPS Tools Discords Last Updated 17th April 2020
- Introduction Final Fantasy XIV Version 5.0: Shadowbringers has arrived, and with it a plethora of job and balance changes for Samurai &ndash; many of which have significant implications on how we should be playing the job optimally.
-Before we get started, it is important to note that this document is not intended to act as a traditional guide.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://guides.xivresources.com/jobs/melee/samurai/advanced-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-10-28T03:28:29+00:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content>
-<meta name=twitter:description content="The Shadowbringers Samurai Compendium An Exploration of 5.0 Samurai Mechanics By Jahaudant @ The Balance & DPS Tools Discords Last Updated 17th April 2020
- Introduction Final Fantasy XIV Version 5.0: Shadowbringers has arrived, and with it a plethora of job and balance changes for Samurai &ndash; many of which have significant implications on how we should be playing the job optimally.
-Before we get started, it is important to note that this document is not intended to act as a traditional guide.">
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link rel=mask-icon href=/safari-pinned-tab.svg color>
-<link rel="shortcut icon" href=/favicon.ico>
-<title></title>
-<link rel=stylesheet href=https://guides.xivresources.com/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin=anonymous>
-</head>
-<body id=page>
-<header id=site-header class="animated slideInUp">
-<div class="hdr-wrapper section-inner">
-<div class=hdr-left>
-<div class=site-branding>
-<a href=https://guides.xivresources.com/>Balance Guides</a>
-</div>
-<nav class="site-nav hide-in-mobile">
-</nav>
-</div>
-<div class="hdr-right hdr-icons">
-<button id=menu-btn class=hdr-btn title=Menu><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
+<script type=text/javascript src=/js/header.js defer></script>
+<link rel=stylesheet href=/css/main.min.92224038ad1e8db59904d54e99f2763da397a35c5dcc65993c1ad1dcd7582bbc.css integrity=sha256-kiJAOK0ejbWZBNVOmfJ2PaOXo1xdzGWZPBrR3NdYK7w=>
+<body>
+<nav class="bg-black z-50">
+<div class="container mx-auto px-2 md:px-0">
+<div class="flex justify-between">
+<div class="flex space-x-7">
+<div>
+<a href=/ class="flex items-center py-4">
+<span class="font-semibold text-lg">The Balance</span>
+</a>
 </div>
 </div>
-</header>
-<div id=mobile-menu class="animated fast">
+<div class="hidden md:flex items-center space-x-3">
+<a href=/jobs/ class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Combat Jobs
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Other Jobs
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Fight Encounters
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Tools
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Other Guides
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Newsfeed
+</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="outline-none mobile-menu-button"><svg class="w-8 h-8 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden mobile-menu">
 <ul>
+<li>
+<a href=/jobs/ class="block text-sm px-2 py-4 text-white font-semibold" title>
+Combat Jobs
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Other Jobs
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Fight Encounters
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Tools
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Other Guides
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Newsfeed
+</a>
+</li>
 </ul>
 </div>
-<main class="site-main section-inner thin animated fadeIn faster">
-<h1></h1>
-<div class=content>
-<h2 id=the-shadowbringers-samurai-compendium>The Shadowbringers Samurai Compendium<a href=#the-shadowbringers-samurai-compendium class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<h3 id=an-exploration-of-50-samurai-mechanics>An Exploration of 5.0 Samurai Mechanics<a href=#an-exploration-of-50-samurai-mechanics class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
-<h4 id=by-jahaudant--the-balance--dps-tools-discords>By Jahaudant @ The Balance & DPS Tools Discords<a href=#by-jahaudant--the-balance--dps-tools-discords class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h4>
+</nav>
+<div id=content class=z-20>
+<div class=space-y-16>
+<div class="h-60 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/healer//_background.png)>
+<div class="container mx-auto z-10 relative flex items-center h-full">
+<div class="grid grid-cols-12 gap-8 w-full items-center">
+<div class="col-span-9 text-white">
+<div class="flex items-center mb-7">
+<img class="job-icon-sm mr-4 filter drop-shadow-lg-healer" src=/theme-assets/jobs/healer//.svg>
+<div class="card-title filter drop-shadow-lg-healer"></div>
+</div>
+<div>
+<div class="flex items-center mb-3">
+<img class="inline mr-8 filter drop-shadow-lg-healer" src=/theme-assets/book.svg>
+<div class="font-bold filter drop-shadow-lg-healer text-6xl"></div>
+</div>
+</div>
+</div>
+<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5">
+<div class="card-title pt-5 pb-4">Guide Info</div>
+<div class="py-3 space-y-2 text-gray-light font-bold">
+<div>Last Updated: 28 Oct, 2021</div>
+<div>Patch Applicable: 5.58</div>
+</div>
+<div class="py-4 text-right">
+<a href=# class=link>Jump to recent changes »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mx-auto">
+<div class="grid grid-cols-12 items-start gap-8 w-full">
+<div class="col-span-9 bg-card-light text-white py-14 px-10">
+<div class="markdown max-w-none">
+<h2 id=the-shadowbringers-samurai-compendium>The Shadowbringers Samurai Compendium</h2>
+<h3 id=an-exploration-of-50-samurai-mechanics>An Exploration of 5.0 Samurai Mechanics</h3>
+<h4 id=by-jahaudant--the-balance--dps-tools-discords>By Jahaudant @ The Balance & DPS Tools Discords</h4>
 <p><em>Last Updated 17th April 2020</em></p>
 <hr>
-<h2 id=introduction>Introduction<a href=#introduction class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
+<h2 id=introduction>Introduction</h2>
 <p>Final Fantasy XIV Version 5.0: Shadowbringers has arrived, and with it a plethora of job and balance changes for Samurai &ndash; many of which have significant implications on how we should be playing the job optimally.</p>
 <p>Before we get started, it is important to note that this document is not intended to act as a traditional guide. It will be of little to no help to a new Samurai, or someone unfamiliar with the fundamentals. Instead, it is written to serve one main purpose; to document and explain various aspects of Samurai 5.0 playstyle and theory in a way that anyone can read and understand.</p>
 <p>It is also important to note that I am not the end-all-be-all of how Samurai should be played and this document serves to demonstrate and explain theories which could be disproven at any point. Just because something is in this compendium doesn’t mean that it will be correct forever. As new tests are done, or new discoveries are made, I will do my best to update any information and present the most accurate representation of optimal Samurai play that I can.</p>
 <hr>
-<h2 id=the-50-samurai-rotation-changes>The 5.0 Samurai Rotation Changes<a href=#the-50-samurai-rotation-changes class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
+<h2 id=the-50-samurai-rotation-changes>The 5.0 Samurai Rotation Changes</h2>
 <p>Coming fresh from version 4.0, you may be used to the free flowing nature of Samurai play. Our abilities didn’t naturally line up very well at all. With Hagakure at 40 seconds, Higanbana at 60 seconds, Meikyo at 80 seconds, and Guren at 120 seconds and on top of that Hagakure and Higanbana having a GCD based pre-requisite the 4.0 Samurai play style was a pure priority system with extended perfect alignment being almost impossible to attain without Higanbana clipping or creative Hagakure usage. And, unlike Warrior, Dragoon, and other classes, Samurai was mostly unconstrained by GCD tier requirements to meet certain rotational thresholds or breakpoints.</p>
 <p>In 5.0, this has changed.</p>
-<h3 id=tsubame-gaeshi-is-restrictive-and-inflexible>Tsubame Gaeshi is Restrictive and Inflexible<a href=#tsubame-gaeshi-is-restrictive-and-inflexible class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=tsubame-gaeshi-is-restrictive-and-inflexible>Tsubame Gaeshi is Restrictive and Inflexible</h3>
 <p>Our new big hitter, Tsubame Gaeshi (or Kaeshi: Setsugekka in 99.9% of situations) is a 60 second cooldown and is only usable immediately after an Iaijutsu (Midare). This makes the ability quite difficult to actually use exactly on cooldown - even more so than Meikyo which, in the previous expansion, would often force us to incur one to two GCD drift for each use.</p>
 <p>Let’s say you just got your third Sen, hit a Hakaze + Jinpu, and your Tsubame cooldown is at three seconds or more. You are left with no choice but to hit Midare, skip Tsubame, and (without Meikyo) perform another nine GCDs before you are able to use Tsubame again. A hefty 15 seconds~ of cooldown drift.</p>
 <p>Even with Meikyo helping us with quick Sen generation, you may find you are often letting Tsubame sit unused for two, three, or more GCDs at a time pushing it slowly outside of our valuable raid buff window and perhaps costing us a whole cast over the course of a fight.</p>
 <p>So the question is; is there anything we can do about this?</p>
-<h3 id=the-crumbs-normalized-cooldown-times>The Crumbs: Normalized Cooldown Times<a href=#the-crumbs-normalized-cooldown-times class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=the-crumbs-normalized-cooldown-times>The Crumbs: Normalized Cooldown Times</h3>
 <p>As noted in the previous section, our small repertoire of abilities have had their cooldowns adjusted. Meikyo Shisui has been reduced from 80 seconds to 55 seconds. Ikishoten is on a 60 second cooldown. And our new ability, Tsubame: Gaeshi, is also on a 60 second cooldown. Combined with the fact that Senei/Guren remain at 120 seconds, I’m sure you can notice the pattern; Samurai now works almost entirely on a 60 second cooldown cycle.</p>
-<h3 id=the-solution-a-rotation-loop>The Solution: A Rotation Loop<a href=#the-solution-a-rotation-loop class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=the-solution-a-rotation-loop>The Solution: A Rotation Loop</h3>
 <p>In order to minimize personal ability cooldown drift and maintain perfect alignment with raid buffs on intervals of 60/120/180 seconds it is important that our rotation allows us to use our two least flexible abilities - Meikyo Shisui and Tsubame: Gaeshi - as soon as they are available. Since Tsubame is on a 60 second cooldown we need to target a specific GCD tier to achieve a clean GCD cycle that comes as close to 60 seconds in length as possible.</p>
 <p>Disregarding whether their 60 second total GCD count allows for a workable rotation this means that our potential optimal GCD tiers will be:</p>
 <ul>
@@ -89,15 +149,15 @@ Before we get started, it is important to note that this document is not intende
 <blockquote>
 <p><strong>WARNING: The below rotation is an example of a base / unoptimized looping rotation. Do not use this in-game.</strong></p>
 </blockquote>
-<h4 id=opener--burst-phase>Opener / Burst Phase<a href=#opener--burst-phase class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h4>
+<h4 id=opener--burst-phase>Opener / Burst Phase</h4>
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884902545238130738/unknown.png alt=Opener/burst></p>
-<h4 id=cooldown-phase>Cooldown Phase<a href=#cooldown-phase class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h4>
+<h4 id=cooldown-phase>Cooldown Phase</h4>
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884902579371376680/unknown.png alt="cooldown phase"></p>
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884902781109022782/unknown.png alt="cooldown table">
 The sequence of 28 GCDs can be repeated infinitely and, as described above, will maintain 60.21 seconds between each cycle of Tsubame, Meikyo and Higanbana applications when performed with 2.15 GCD.</p>
 <hr>
-<h2 id=optimizing-potency>Optimizing Potency<a href=#optimizing-potency class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<h3 id=maximizing-yukikaze-combo-usage>Maximizing Yukikaze Combo Usage<a href=#maximizing-yukikaze-combo-usage class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h2 id=optimizing-potency>Optimizing Potency</h2>
+<h3 id=maximizing-yukikaze-combo-usage>Maximizing Yukikaze Combo Usage</h3>
 <p>Yukikaze Combo, when examined in a vacuum, is slightly weaker than Gekko or Kasha. However, when considering the value of the Sen it produces (in two GCDs rather than three) it overtakes Gekko/Kasha in efficiency. (There are some technicalities due to part of the additional Sen value requiring a GCD, but we can ignore that for now.)</p>
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884902896284602458/unknown.png alt="Potency-per-GCD Comparison for Yukikaze and Gekko/Kasha combos.">
 <em>Potency-per-GCD Comparison for Yukikaze and Gekko/Kasha combos.</em></p>
@@ -114,11 +174,11 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p>That said, we can’t simply implement this principle in our looping rotation and expect it to work out. For every G/K Combo that we switch to a Yuki Combo, we effectively reduce the number of GCDs we are using to generate Sen. Without adjusting our rotation elsewhere we will end up with incorrect Sen amounts when we want to be specifically doing Midare or Higanbana. For example, by employing this optimization, we actually turn our original base 28 GCD rotation in to a 26 GCD rotation and therefore break our neat alignment.</p>
 <p>How do we fix this? Fillers…</p>
 <hr>
-<h2 id=maintaining-gcd-count>Maintaining GCD Count<a href=#maintaining-gcd-count class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<h3 id=filler-gcds>Filler GCDs<a href=#filler-gcds class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h2 id=maintaining-gcd-count>Maintaining GCD Count</h2>
+<h3 id=filler-gcds>Filler GCDs</h3>
 <p>We can’t just go reducing the number of GCDs we use, and that’s exactly what we are doing when we switch the three GCD Gekko combo with the two GCD Yukikaze combo where possible. We need to maintain the same number of GCDs used per 60 seconds in order not to incur cooldown drift. Does that then make this Yukikaze optimization tech kind of worthless? Not quite.</p>
 <p>In short, it is theoretically optimal to do Yukikaze optimization techs mentioned above and then replace the “removed” GCD with a filler GCD.</p>
-<h3 id=hagakure>Hagakure<a href=#hagakure class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=hagakure>Hagakure</h3>
 <p>At ten Kenki per Sen, Hagakure is not worth using the same way as we did in 4.0 and with a five second cooldown even if we tried to do so we would never be able to use any Iaijutsu! Hagakure does have it’s uses, though. Namely:</p>
 <ol>
 <li>Resetting Sen after a long downtime to allow for a clean re-opener.</li>
@@ -128,7 +188,7 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <ol start=3>
 <li>Eating filler combo Sens for bonus Kenki.</li>
 </ol>
-<h3 id=enpi-as-a-filler>Enpi as a Filler<a href=#enpi-as-a-filler class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=enpi-as-a-filler>Enpi as a Filler</h3>
 <p>The first and most obvious filler that comes to mind is Enpi. Simply put, after implementing a single Meikyo Optimisation we then use Yaten -> Enpi somewhere in our cooldown phase.</p>
 <p>Pros</p>
 <ul>
@@ -146,7 +206,7 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p><strong>Meikyo Yukikaze + Kasha Combo (Four GCDs)</strong></p>
 <p>552 (Meikyo Yukikaze) + 264 (Hakaze) + 384 (Shifu) + 608 (Kasha) = 1808 Potency</p>
 <p><strong>Total gained per optimization: 36 Potency</strong></p>
-<h3 id=yukikaze-as-a-filler>Yukikaze as a Filler<a href=#yukikaze-as-a-filler class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=yukikaze-as-a-filler>Yukikaze as a Filler</h3>
 <p>Pros</p>
 <ul>
 <li>With Hagakure, higher potency per GCD than Enpi.</li>
@@ -164,7 +224,7 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p>1104 (2 Meikyo Yukikaze) + 2512 (2 G/K Combo) =3616 Potency</p>
 <p><strong>Total Difference: 176 Potency</strong></p>
 <p><strong>Gained per optimisation: 88 Potency</strong></p>
-<h3 id=gekkokasha-as-a-filler>Gekko/Kasha as a Filler<a href=#gekkokasha-as-a-filler class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=gekkokasha-as-a-filler>Gekko/Kasha as a Filler</h3>
 <p>Pros</p>
 <ul>
 <li>Applies Shifu or Jinpu.</li>
@@ -186,22 +246,22 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884903296513499158/unknown.png alt="Gekko Filler"></p>
 <p>Gekko filler wins!</p>
 <hr>
-<h2 id=downtime>Downtime<a href=#downtime class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
+<h2 id=downtime>Downtime</h2>
 <p>Downtime is more difficult to deal with in 5.0 and has the potential to cause issues with or completely break our looping rotation.</p>
 <p>For example, if a boss mechanic means we can’t hit it for four seconds then when Tsubame becomes available to use again, we are going to be roughly two GCDs behind. There are three different ways of dealing with short downtimes like this.</p>
-<h3 id=option-1>Option 1:<a href=#option-1 class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=option-1>Option 1:</h3>
 <p>We don’t immediately use Meikyo/Bana/Tsubame when they become available, and instead use them at the normal point in our rotation.</p>
 <p>This is the easiest solution. You can just blindly continue your usual rotation at the cost of incurring a four second drift on your cooldowns (and Higanbana). This may put all of or a portion of your burst outside of any consistent buff windows.</p>
-<h3 id=option-2>Option 2:<a href=#option-2 class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=option-2>Option 2:</h3>
 <p>We Meikyo on cooldown, but at a different Sen, break our current loop and revert to an ad hoc rotation style for the remainder of the phase or fight.</p>
 <p>This is probably the most natural feeling solution coming from playing SAM in 4.0 and it’s not a bad option to go with. You’ll be Meikyo’ing (and hopefully also Tsubame’ing) at roughly the same time as your buff window comes up but you’ll have to be quick on your feet to either figure out a new loop or ad-hoc your way through the remainder of the phase/fight.</p>
-<h3 id=option-3>Option 3:<a href=#option-3 class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=option-3>Option 3:</h3>
 <p>Drop your filler GCDs for that cycle.</p>
 <p>The best of both worlds, but much trickier to pull off on-the-fly. For each ~2 seconds of downtime encountered you can remove one filler GCD from your cycle. For example, if you have a Yukikaze Hagakure filler by default and you disconnect from your target for two seconds, you can switch it to a single Enpi filler. Four seconds? Drop the filler entirely. We have even more theoretical downtime buffer than is provided by the rotation examples in the next section too.</p>
 <p>Fun fact: By entering Meikyo with a Yuki Sen, ending Meikyo with a Gekko/Kasha, and applying Higanbana with a Yukikaze Sen we can manipulate our rotation at 2.06 GCD to require up to four filler GCDs which equates to 10.8 seconds of downtime buffer.</p>
 <hr>
-<h2 id=ad-hoc--freestyle-samurai>Ad Hoc / Freestyle Samurai<a href=#ad-hoc--freestyle-samurai class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<h3 id=the-effectiveness-of-ad-hoc-style>The Effectiveness of Ad Hoc Style<a href=#the-effectiveness-of-ad-hoc-style class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h2 id=ad-hoc--freestyle-samurai>Ad Hoc / Freestyle Samurai</h2>
+<h3 id=the-effectiveness-of-ad-hoc-style>The Effectiveness of Ad Hoc Style</h3>
 <p>The goal of ad hoc play is to reduce or remove the need for “wasted” GCDs by shifting around Meikyo placement ad hoc (as required). That means attempting to perform a rotation with fewer “wasted” GCDs than the loop allows for.</p>
 <p>To put that into perspective the standard 2.15 GCD 28 step loop incurs a total of three “wasted” GCDs.</p>
 <ol>
@@ -219,18 +279,18 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <li>Faster than 2.00 and you will almost certainly be better off freestyling it. The required number of fillers to loop at this speed is a considerable potency loss.</li>
 <li>Looping becomes impossible in very mechanic-heavy encounters where you are unable to maintain full uptime for at least a minute at a time.</li>
 </ul>
-<h3 id=why-this-compendium-wont-cover-it-in-depth>Why This Compendium Won’t Cover it in Depth<a href=#why-this-compendium-wont-cover-it-in-depth class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=why-this-compendium-wont-cover-it-in-depth>Why This Compendium Won’t Cover it in Depth</h3>
 <p>Ad hoc follows the basic Samurai priority system instilled in you either from 4.0 or through the levelling experience. Perform your opener, then do your best to maintain buffs, apply Higanbana with as little clip or downtime as possible, don’t let Meikyo and Tsubame drift, and be potency-effective by following the same rules regarding Yukikaze and Meikyo as I’ve laid out in the previous sections. Simple enough in theory and especially more so now in 5.0 , where we don’t have a positive potency Hagakure to implement. High level optimization with this play style is almost entirely encounter dependent and so is not suited to this guide, which is intended to be universal.</p>
 <hr>
-<h2 id=openers-and-rotations>Openers and Rotations<a href=#openers-and-rotations class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<h3 id=cheat-sheet>Cheat Sheet<a href=#cheat-sheet class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h2 id=openers-and-rotations>Openers and Rotations</h2>
+<h3 id=cheat-sheet>Cheat Sheet</h3>
 <p><img src=https://i.imgur.com/N52Dliz.png alt="Cheat Sheet"></p>
-<h3 id=videos>Videos<a href=#videos class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h3 id=videos>Videos</h3>
 <p>Valynn#9029 has recorded the two main rotations for those of you who prefer videos as learning tools.</p>
 <p><strong><a href=https://youtu.be/7mCoCOIAWqo>Higanbana First Opener + 2.14 GCD Looping Rotation</a></strong> - [4:35]</p>
 <p><strong><a href=https://youtu.be/EWHO4Btr0Nc>Midare First Opener + 2.14 GCD Looping Rotation</a></strong> - [4:34]</p>
 <hr>
-<h2 id=constructing-a-looping-rotation---reference>Constructing a Looping Rotation - Reference<a href=#constructing-a-looping-rotation---reference class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
+<h2 id=constructing-a-looping-rotation---reference>Constructing a Looping Rotation - Reference</h2>
 <p><strong>Viable GCD/SKS tiers (with Shifu) for Looping:</strong></p>
 <table>
 <thead>
@@ -271,21 +331,169 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 </ol>
 <p>Avoid using Yaten-Enpi as filler unless necessary for boss mechanics or when only a single filler GCD is needed.</p>
 <hr>
-<h2 id=general-q--a>General Q & A<a href=#general-q--a class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h2>
-<h3 id=is-kaeshi-higanbana-worth-using>Is Kaeshi: Higanbana Worth Using?<a href=#is-kaeshi-higanbana-worth-using class=anchor aria-hidden=true><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3m-6 0H6a5 5 0 01-5-5 5 5 0 015-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></a></h3>
+<h2 id=general-q--a>General Q & A</h2>
+<h3 id=is-kaeshi-higanbana-worth-using>Is Kaeshi: Higanbana Worth Using?</h3>
 <p><strong>Short Answer: No. Never.</strong></p>
 <p>It is important to note that the DoT from Kaeshi: Higanbana does not stack with the DoT from regular Higanbana. This makes it obvious from even a cursory glance at the tooltip that it has no use case in single-target situations. What might not be obvious though is that, in fact, Kaeshi: Higanbana has no use case in any situation - ever.</p>
 <p>The Sen efficiency of using our Tsubame cooldown on Midare is quite literally impossible to beat. In short, it is always better to use Tsubame on Kaeshi: Setsugekka and then apply a manual Higanbana to our second target than it is to ever use Kaeshi: Higanbana because it costs just three GCDs to do so compared to the nine to fire off another Midare. I have created a simple potency table to illustrate how this works.</p>
 <p>Each line is a GCD. Yellow numbers indicate where total damage at that GCD is equal between rotations. Red numbers mean that rotation is underperforming compared to the other. And green numbers mean that rotation is outperforming the other.</p>
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884903581537427466/unknown.png alt="Is Kaehi: Higibana Worth Using?"></p>
 </div>
-</main>
-<footer id=site-footer class="section-inner thin animated fadeIn faster">
-<p>&copy; 2021 <a href=https://guides.xivresources.com/></a></p>
-<p>
-Made with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> &#183; Theme <a href=https://github.com/Track3/hermit target=_blank rel=noopener>Hermit</a> &#183; <a href=https://guides.xivresources.com/posts/index.xml target=_blank title=rss><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a>
-</p>
+</div>
+<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
+<div class="card-title pt-6 pb-5">Table of Contents</div>
+<div class="nested-link font-bold py-2"><nav id=TableOfContents>
+<ul>
+<li><a href=#the-shadowbringers-samurai-compendium>The Shadowbringers Samurai Compendium</a>
+<ul>
+<li><a href=#an-exploration-of-50-samurai-mechanics>An Exploration of 5.0 Samurai Mechanics</a></li>
+</ul>
+</li>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#the-50-samurai-rotation-changes>The 5.0 Samurai Rotation Changes</a>
+<ul>
+<li><a href=#tsubame-gaeshi-is-restrictive-and-inflexible>Tsubame Gaeshi is Restrictive and Inflexible</a></li>
+<li><a href=#the-crumbs-normalized-cooldown-times>The Crumbs: Normalized Cooldown Times</a></li>
+<li><a href=#the-solution-a-rotation-loop>The Solution: A Rotation Loop</a></li>
+</ul>
+</li>
+<li><a href=#optimizing-potency>Optimizing Potency</a>
+<ul>
+<li><a href=#maximizing-yukikaze-combo-usage>Maximizing Yukikaze Combo Usage</a></li>
+</ul>
+</li>
+<li><a href=#maintaining-gcd-count>Maintaining GCD Count</a>
+<ul>
+<li><a href=#filler-gcds>Filler GCDs</a></li>
+<li><a href=#hagakure>Hagakure</a></li>
+<li><a href=#enpi-as-a-filler>Enpi as a Filler</a></li>
+<li><a href=#yukikaze-as-a-filler>Yukikaze as a Filler</a></li>
+<li><a href=#gekkokasha-as-a-filler>Gekko/Kasha as a Filler</a></li>
+</ul>
+</li>
+<li><a href=#downtime>Downtime</a>
+<ul>
+<li><a href=#option-1>Option 1:</a></li>
+<li><a href=#option-2>Option 2:</a></li>
+<li><a href=#option-3>Option 3:</a></li>
+</ul>
+</li>
+<li><a href=#ad-hoc--freestyle-samurai>Ad Hoc / Freestyle Samurai</a>
+<ul>
+<li><a href=#the-effectiveness-of-ad-hoc-style>The Effectiveness of Ad Hoc Style</a></li>
+<li><a href=#why-this-compendium-wont-cover-it-in-depth>Why This Compendium Won’t Cover it in Depth</a></li>
+</ul>
+</li>
+<li><a href=#openers-and-rotations>Openers and Rotations</a>
+<ul>
+<li><a href=#cheat-sheet>Cheat Sheet</a></li>
+<li><a href=#videos>Videos</a></li>
+</ul>
+</li>
+<li><a href=#constructing-a-looping-rotation---reference>Constructing a Looping Rotation - Reference</a></li>
+<li><a href=#general-q--a>General Q & A</a>
+<ul>
+<li><a href=#is-kaeshi-higanbana-worth-using>Is Kaeshi: Higanbana Worth Using?</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="container mx-auto">
+<div class=tabbed>
+<input type=radio id=tab-Authors name=css-tabs checked>
+<input type=radio id=tab-Contributors name=css-tabs>
+<input type=radio id=tab-Changelog name=css-tabs>
+<ul class=tabs>
+<li class="tab meta-tab"><label for=tab-Authors>Authors</label></li>
+<li class="tab meta-tab"><label for=tab-Contributors>Contributors</label></li>
+<li class="tab meta-tab"><label for=tab-Changelog>Changelog</label></li>
+</ul>
+<div id=meta-slider class=tab-content>
+<div class="card-title mb-5">Have any questions?</div>
+<div class="flex items-center mb-9">
+<img class=mr-4 src=/theme-assets/the_balance.png>
+<div class="flex items-center">
+<img class=mr-2 src=/theme-assets/orange_discord_no_text.png>
+<a class=link href=https://discord.gg/thebalanceffxiv>discord.gg/thebalanceffxiv</a>
+</div>
+</div>
+<div class="card-title mb-5">Authors</div>
+<div class="flex flex-row gap-12">
+<div>
+<div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+</div>
+<div class="text-center text-gray-light"></div>
+</div>
+</div>
+</div>
+<div id=meta-slider class=tab-content>
+<div class=py-6>
+</div>
+</div>
+<div id=meta-slider class=tab-content>
+<div class=py-4>
+<div>28 Oct, 2021</div>
+<div>Created page</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><footer class=footer>
+<div class="container mx-auto mt-16 mb-8">
+<img src=/theme-assets/the_balance.png>
+<div class="flex mt-16">
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Combat Jobs
+</h3>
+<ul>
+<li><a href=/jobs/casters/>Casters</a></li>
+<li><a href=/jobs/healers/>Healers</a></li>
+<li><a href=/jobs/melee/>Melee</a></li>
+<li><a href=/jobs/ranged/>Ranged</a></li>
+<li><a href=/jobs/tanks/>Tanks</a></li>
+</ul>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Other Jobs
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Fight Encounters
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Tools
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Other Guides
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1">
+Info
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1">
+pages
+</h3>
+<ul>
+<li><a href=/pages/credits/>Credits</a></li>
+</ul>
+</div>
+</div>
+</div>
 </footer>
-<script src=https://guides.xivresources.com/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin=anonymous></script>
 </body>
 </html>
