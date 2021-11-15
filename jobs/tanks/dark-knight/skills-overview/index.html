@@ -5,7 +5,7 @@
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.92224038ad1e8db59904d54e99f2763da397a35c5dcc65993c1ad1dcd7582bbc.css integrity=sha256-kiJAOK0ejbWZBNVOmfJ2PaOXo1xdzGWZPBrR3NdYK7w=>
+<link rel=stylesheet href=/css/main.min.18bd8236e32ae66374294432c299dd8939f6bac690fcc6796e40e8d472b8b8ab.css integrity=sha256-GL2CNuMq5mN0KUQywpndiTn2usaQ/MZ5bkDo1HK4uKs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -86,7 +86,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-tanks" src=/theme-assets/jobs/tanks/dark_knight/dark_knight.svg>
-<div class="card-title filter drop-shadow-lg-tanks">Dark Knight</div>
+<div class="card-title filter drop-shadow-lg-tanks">dark_knight</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -112,16 +112,36 @@ Newsfeed
 <div class="grid grid-cols-12 items-start gap-8 w-full">
 <div class="col-span-9 bg-card-light text-white py-14 px-10">
 <div class="markdown max-w-none">
-<h2 id=skills-and-abilities-overview>Skills and Abilities Overview</h2>
 <h3 id=tank-stance>Tank Stance</h3>
-<p><img src=https://xivapi.com/i/003000/003070_hr1.png alt=Grit> <strong>Grit</strong></p>
+<p><img src=https://xivapi.com/i/003000/003070_hr1.png alt=Grit>
+<strong>Grit</strong></p>
 <ul>
 <li>Toggle - Ten second cooldown after toggling on • no cooldown for toggling off</li>
 <li>Multiplies enmity (aggro, hate, etc) generation by ten</li>
 <li>Keep this on in dungeons or as the current maintank (in content with more than one tank)</li>
 </ul>
 <h3 id=single-target-gcds>Single Target GCDs</h3>
-<p><img src=https://xivapi.com/i/003000/003051_hr1.png alt="Hard Slash"> <img src=https://xivapi.com/i/003000/003054_hr1.png alt="Syphon Strike"> <img src=https://xivapi.com/i/003000/003055_hr1.png alt=Souleater> <strong>Souleater Combo</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Hard Slash ></strong></th>
+<th><strong>Syphon Strike ></strong></th>
+<th><strong>Souleater</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/003000/003051_hr1.png alt="Hard Slash"></td>
+<td><img src=https://xivapi.com/i/003000/003054_hr1.png alt="Syphon Strike"></td>
+<td><img src=https://xivapi.com/i/003000/003055_hr1.png alt=Souleater></td>
+</tr>
+<tr>
+<td><strong>Souleater Combo</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>
 <p>200 > 300 > 400 potency</p>
@@ -132,13 +152,14 @@ Newsfeed
 </ol>
 </li>
 </ul>
-<p><img src=https://xivapi.com/i/003000/003080_hr1.png alt=Bloodspiller> <strong>Bloodspiller</strong></p>
+<p><img src=https://xivapi.com/i/003000/003080_hr1.png alt=Bloodspiller>
+<strong>Bloodspiller</strong></p>
 <ul>
 <li>600 potency</li>
 <li>Costs 50 Blood</li>
 </ul>
-<h3 id=abilities-ogcds>Abilities (oGCDs)</h3>
-<h4 id=buffs>Buffs</h4>
+<h2 id=abilities-ogcds>Abilities (oGCDs)</h2>
+<h3 id=buffs>Buffs</h3>
 <p><img src=https://xivapi.com/i/003000/003071_hr1.png alt="Blood Weapon"></p>
 <h4 id=blood-weapon>Blood Weapon</h4>
 <p>60s cooldown • 10s duration Weaponskills and Spells (all GCDs) restore 600 MP and ten Blood By using Blood Weapon late into the GCD (just before the next GCD), it is possible to fit five GCDs into the buff window</p>
@@ -214,8 +235,8 @@ Grants <em>Dark Arts</em> when shield breaks
 10s duration • 60s cooldown</p>
 <p><img src=https://xivapi.com/i/003000/003077_hr1.png alt="Living Dead"></p>
 <h4 id=living-dead>Living Dead</h4>
-<p>10s duration
-If you would die with <em>Living Dead</em> active, you instead don’t die and gain <em>Walking Dead</em> for ten seconds.
+<p>10s duration<br>
+If you would die with <em>Living Dead</em> active, you instead don’t die and gain <em>Walking Dead</em> for ten seconds.<br>
 <em>Walking Dead</em> - Can’t be reduced below one HP for the duration. Die after Walking Dead runs out unless healed for 100% of your HP, dispelling Walking Dead.</p>
 <h3 id=utility>Utility</h3>
 <p><img src=https://xivapi.com/i/000000/000803_hr1.png alt=Provoke></p>
@@ -233,7 +254,20 @@ Affects everything on the enemy list</p>
 Become immune to most knockbacks
 Applies a 20% auto-attack and cast slow for 15s to enemies that attack you (resisted by most bosses)</p>
 <h2 id=aoe>AoE</h2>
-<p><img src=https://xivapi.com/i/003000/003063_hr1.png alt=Unleash> <img src=https://xivapi.com/i/003000/003084_hr1.png alt="Stalwart Soul"></p>
+<table>
+<thead>
+<tr>
+<th><strong>Unleash ></strong></th>
+<th><strong>Stalwart Soul</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/003000/003063_hr1.png alt=Unleash></td>
+<td><img src=https://xivapi.com/i/003000/003084_hr1.png alt="Stalwart Soul"></td>
+</tr>
+</tbody>
+</table>
 <h3 id=stalwart-soul-combo-gcd>Stalwart Soul Combo (GCD)</h3>
 <p>150 > 160 potency</p>
 <ol>
@@ -281,11 +315,17 @@ Interruptible actions are denoted by red flashing castbars</p>
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
 <ul>
-<li><a href=#skills-and-abilities-overview>Skills and Abilities Overview</a>
+<li>
+<ul>
+<li>
 <ul>
 <li><a href=#tank-stance>Tank Stance</a></li>
 <li><a href=#single-target-gcds>Single Target GCDs</a></li>
-<li><a href=#abilities-ogcds>Abilities (oGCDs)</a></li>
+</ul>
+</li>
+<li><a href=#abilities-ogcds>Abilities (oGCDs)</a>
+<ul>
+<li><a href=#buffs>Buffs</a></li>
 <li><a href=#offensive>Offensive</a></li>
 <li><a href=#defensive-or-utility>Defensive or Utility</a></li>
 <li><a href=#party>Party</a></li>
@@ -305,6 +345,8 @@ Interruptible actions are denoted by red flashing castbars</p>
 <li><a href=#unmend-gcd>Unmend (GCD)</a></li>
 <li><a href=#low-blow-ogcd>Low Blow (oGCD)</a></li>
 <li><a href=#interject-ogcd>Interject (oGCD)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -336,8 +378,10 @@ Interruptible actions are denoted by red flashing castbars</p>
 <div class="flex flex-row gap-12">
 <div>
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
 </div>
-<div class="text-center text-gray-light"></div>
+<div class="text-center text-gray-light">Balance DRK Staff</div>
+<div class="text-center text-gray-light">⠀</div>
 </div>
 </div>
 </div>
